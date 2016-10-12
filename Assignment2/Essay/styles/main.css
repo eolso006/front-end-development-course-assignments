@@ -1,5 +1,14 @@
-body{index.html
+body{
     margin:20px auto;
     width:960px;
 }
-#header: color: #DC143C
+#header{ color: #DC143C}
+span{
+    text-decoration: underline;
+}
+.main-point{
+    font-family: "Courier New", Courier, monospace;
+}
+h2{
+    font-weight: bold;
+}
