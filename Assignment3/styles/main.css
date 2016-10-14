@@ -1,0 +1,7 @@
+h1{ color: #00BFFF}
+body{
+    margin:20px auto;
+    width:960px;
+    background-image: url("lightgrid.jpg");
+    opacity: 0.5;
+}
