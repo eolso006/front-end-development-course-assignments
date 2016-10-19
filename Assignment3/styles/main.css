@@ -1,7 +1,60 @@
-h1{ color: #00BFFF}
+h1{
+  border-bottom: 1px solid #00BFFF;
+  background: #000000;
+  color: #00BFFF;
+  display: block;
+  font-size: 4em;
+}
 body{
     margin:20px auto;
     width:960px;
-    background-image: url("lightgrid.jpg");
-    opacity: 0.5;
+    background: url("lightgrid.jpg") center fixed;
+    background-color : transparent 50%;
+    background-size: 115%;
+    /*opacity: 0.5;*/
+}
+.pics{
+  clear: both;
+}
+.audio {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  clear: both;
+}
+.cpu {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  float: right;
+  clear: both;
+}
+.earbud img {
+  border-color: #cc890e;
+  border-style: solid;
+  border-width: 15px;
+  padding: 0px;
+  /*align: left; */
+}
+.headphone img {
+  border-color: #cc890e;
+  border-style: solid;
+  border-width: 15px;
+  padding: 0px;
+  align: center;
+}
+.laptop img {
+  border-color: #cc890e;
+  border-style: solid;
+  border-width: 15px;
+  padding: 0px;
+  align: left;
+}
+.phone img {
+  border-color: #cc890e;
+  border-style: solid;
+  border-width: 15px;
+  padding: 0px;
+  align: left;
 }
