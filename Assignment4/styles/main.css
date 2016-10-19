@@ -29,9 +29,11 @@ hr {
   padding: 0;
   /*remove default padding and margin*/
 }
-.gallery-image{
-  margin:10px;
+.gallery-image {
+  margin: 10px;
   padding: 10px;
+  display: block;
+  float: left;
 }
 .main-content {
   float: left;
@@ -43,5 +45,14 @@ hr {
   width: 20%;
 }
 .content-footer{
-
+  border-top: 1px solid #000000;
+  clear:both;
+  padding-top: 10px;
+}
+.image-list2{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  float: right;
 }
