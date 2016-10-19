@@ -6,3 +6,16 @@ h1{
   color: #777777;
   border-bottom: 1px solid #777777;
 }
+h2{
+  color: #aa0000;
+  border-bottom: 1px solid #aa0000;
+}
+hr{
+  /*clear:both;*/
+}
+.navigation-link {
+  background: #000000;
+  color: #ffffff;
+  display: block
+  float: left;
+}
