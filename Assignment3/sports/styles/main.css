@@ -1,5 +1,35 @@
 body{
     margin:20px auto;
     width:960px;
+    background: url("stadiumlights.jpg") center fixed;
+    background-color : transparent 50%;
+    background-size: 115%;
 }
-h1{ color: #DC143C}
+h1{
+  border-bottom: 1px solid #DC143C;
+  color: #DC143C;
+  font-size: 4em;
+}
+.basketball img {
+  border-color: #609dff;
+  border-style: solid;
+  border-width: 15px;
+  padding: 0px;
+  margin:10px;
+}
+.cleat img {
+  border-color: #002b72;
+  border-style: solid;
+  border-width: 15px;
+  padding: 0px;
+  margin:10px;
+
+}
+.swim img {
+  border-color: #002b72;
+  border-style: solid;
+  border-width: 15px;
+  padding: 0px;
+  margin:10px;
+  float: right;
+}
