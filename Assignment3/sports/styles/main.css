@@ -10,6 +10,16 @@ h1{
   color: #DC143C;
   font-size: 4em;
 }
+.cleat img {
+  border-color: #002b72;
+  border-style: solid;
+  border-width: 15px;
+  padding: 0px;
+  margin:10px;
+}
+.basketball {
+  text-align: center;
+}
 .basketball img {
   border-color: #609dff;
   border-style: solid;
@@ -17,19 +27,13 @@ h1{
   padding: 0px;
   margin:10px;
 }
-.cleat img {
-  border-color: #002b72;
-  border-style: solid;
-  border-width: 15px;
-  padding: 0px;
-  margin:10px;
-
-}
 .swim img {
   border-color: #002b72;
   border-style: solid;
   border-width: 15px;
   padding: 0px;
   margin:10px;
-  float: right;
+}
+.swim {
+  text-align: right;
 }
