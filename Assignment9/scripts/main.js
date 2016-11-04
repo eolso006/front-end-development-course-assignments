@@ -1,3 +1,7 @@
+function getRandomNumber() {
+  return Math.floor(Math.random() * (100 - 1)) + 1;
+}
+
 /*******Part 1***********/
 //Place all of your part 1 code here
 var name = "Eric Olson";
@@ -44,12 +48,12 @@ var part6Result
     document.getElementById('part6Result').innerHTML = "Below or equal to 50"
   }
 
-document.getElementById('part6Number').innerHTML = part6Number
+document.getElementById('part6Number').innerHTML = part6Number;
 
 /***      Part 7*/
 var part7Number = getRandomNumber();
 
-if (x > y && x > z)
+//if (x > y && x > z)
 
 
 ////////////////////////////////////////////////////////////////
