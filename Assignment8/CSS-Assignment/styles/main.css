@@ -23,19 +23,20 @@ a:hover{
 }
 header {
   background-color: #a81c00;
-  height: 160px;
+  /*overflow: hidden; */
 }
-header ul  {
+nav ul  {
+  padding-left: 0;
 }
 nav li {
   padding: 10px;
   border-bottom: 2px solid #ffffff;
-
+  /*padding-left: -40px; */
 }
 footer {
   background-color: #666666;
   clear: both;
-  overflow: visible;
+  /*overflow: hidden;*/
 }
 section li {
   float: left;
@@ -45,7 +46,7 @@ section li {
 section {
   clear: both;
   padding-left: 20px;
-  height: 900px/*20%*/;
+  height: 900px;
   width: 600px;
   overflow: visible;
 }
