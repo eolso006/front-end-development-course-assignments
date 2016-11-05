@@ -53,7 +53,18 @@ document.getElementById('part6Number').innerHTML = part6Number;
 /***      Part 7*/
 var part7Number = getRandomNumber();
 
+var part7Result
+if (part7Number < 25) {
+  document.getElementById('part7Number').innerHTML = "Below 25"
+} else if (part7Number >= 25 && part7Number < 50) {
+  document.getElementById('part7Number').innerHTML = "Between 25 and 50"
+} else if (part7Number >= 50 && part7Number < 75) {
+  document.getElementById('part7Number').innerHTML = "Between 50 and 75"
+} else {
+  document.getElementById('part7Number').innerHTML = "Above 75"
+}
 //if (x > y && x > z)
+
 
 
 ////////////////////////////////////////////////////////////////
