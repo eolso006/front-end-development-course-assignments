@@ -1,5 +1,6 @@
 function update() {
     //////////////////////Your Code Starts here
+var array = [];
 
     ///Part 1
     var firstName = getValue('firstName');
@@ -46,7 +47,13 @@ getElm("p2_emailLength").innerHTML = emailAddress.length;
     // Part 3
     var randomNumber = getValue('randomNumber');
     console.log(randomNumber);
+//var parseNumber = parsefloat('randomNumber');
+var makeNumber = Number(randomNumber)
+if (!isNaN(makeNumber)) {
+  console.log();
+}
 
+getElm("p3_number").innerHTML = parsefloat(randomNumber);
 
 
 
@@ -55,12 +62,8 @@ getElm("p2_emailLength").innerHTML = emailAddress.length;
     console.log(arrayInput);
 
 
-
-
-
-
-
-
+array.push(arrayInput);
+console.log();
 
 
 
