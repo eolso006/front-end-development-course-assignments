@@ -48,10 +48,8 @@ getElm("p2_emailLength").innerHTML = emailAddress.length;
     var randomNumber = getValue('randomNumber');
     console.log(randomNumber);
 //var parseNumber = parsefloat('randomNumber');
-var makeNumber = Number(randomNumber)
-if (!isNaN(makeNumber)) {
-  console.log();
-}
+//var makeNumber = Number(randomNumber)
+//if (!isNaN(makeNumber)) { don't use this. instead use == or === (3 means is equal value and type)
 
 getElm("p3_number").innerHTML = parsefloat(randomNumber);
 
