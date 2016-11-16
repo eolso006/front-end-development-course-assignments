@@ -1,6 +1,7 @@
+var Arr = [];
 function update() {
     //////////////////////Your Code Starts here
-var array = [];
+
 
     ///Part 1
     var firstName = getValue('firstName');
@@ -9,15 +10,21 @@ var array = [];
     console.log(lastName);
 //populate names
 var fullName = firstName + " " + lastName;
-document.getElementById('p1_fullName').innerHTML = fullName
+getElm('p1_fullName').innerHTML = fullName
 //validate names
-var isValidName = true;
-var notValidName = false;
+var isValidName
+//var notValidName = false;
 if (firstName == "" || lastName == "") {
-  getElm("p1_valid").innerHTML = notValidName
+  isValidName = false;
+}
+ else {
+   isValidName = true;
+ }
+ getElm("p1_valid").innerHTML = isValidName;
+/*  getElm("p1_valid").innerHTML = notValidName
 } else {
   getElm("p1_valid").innerHTML = isValidName
-}
+}*/
 //name length
 var fullNameLength = (firstName+lastName).length;
 getElm("p1_fullNameLength").innerHTML = fullNameLength
@@ -30,8 +37,7 @@ if (isFnameValid === false) {
   firstNameInput.classlist.remove('invalid');
 }*/
 
-    // Part 2
-//populate email
+    // Part 2  //populate email
     var emailAddress = getValue('emailAddress');
     console.log(emailAddress);
 getElm("p2_email").innerHTML = emailAddress;
@@ -47,23 +53,30 @@ getElm("p2_emailLength").innerHTML = emailAddress.length;
     // Part 3
     var randomNumber = getValue('randomNumber');
     console.log(randomNumber);
-//var parseNumber = parsefloat('randomNumber');
-//var makeNumber = Number(randomNumber)
-//if (!isNaN(makeNumber)) { don't use this. instead use == or === (3 means is equal value and type)
+getElm("p3_number").innerHTML = (randomNumber);
 
-getElm("p3_number").innerHTML = parsefloat(randomNumber);
-
-
+var parsedNum = parseInt(randomNumber);
+var isValidNum;
+/*if (isNaN(parsedNum) {
+  isValidNum = false;
+}
+else {
+  isValidNum = true;
+}*/
+getElm("p3_valid").innerHTML = isValidNum;
 
     // Part 4
-    var arrayInput = getValue('arrayValue');
+//    var arrayInput = getValue('arrayValue');
+//messing with the var to populate the user data
+var arrayInput = [fullName + emailAddress, + parsedNum];
     console.log(arrayInput);
 
+Arr.push(arrayInput);
+console.log(arrayInput);
 
-array.push(arrayInput);
-console.log();
+getElm("p4_arraylength").innerHTML = Arr.length;
 
-
+getElm("p4_valid").innerHTML = Arr;
 
     ////////////////////////Youre code ends here.
 

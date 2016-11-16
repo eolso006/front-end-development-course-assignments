@@ -15,7 +15,7 @@ if (lastName == '') {
   messages.push("LAST NAME IS REQUIRED");
 }
 if (emailAddress == '') {
-  messages.push("EMAIL IS REQUIRED!");
+  messages.push("EMAIL ADDRESS IS REQUIRED!");
 }
 console.log(messages);
 ////part 2
@@ -26,12 +26,21 @@ for (var i = 0; i < messages.length; i++) {
 getElm("error-list").innerHTML = html
 
 ///////Part 3//////
-///create object called user
+var user = {
+  first: firstName,
+  last: lastName,
+  email: emailAddress,
+};
 
+user.fullname = function(){
+  return this.first + " " + this.last;
+};
 
-
-
+if(messages.length === 0){
+  alert("Submitted")
 }
+
+};
 ///
 var btn = document.getElementById('btnUpdate');
 btn.addEventListener('click', update);

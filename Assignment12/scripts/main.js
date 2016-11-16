@@ -5,9 +5,7 @@ var inputs = []
 //var invalid =
 ///////////
 
-
-
-
+document.getElementById("id").innerHTML
 
 
 
