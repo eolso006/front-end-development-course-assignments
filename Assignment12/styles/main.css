@@ -5,4 +5,11 @@
 body {
     width:500px;
     margin:20px auto;
+
+}
+
+.errClass {
+  border: 1px solid #e84343;
+  background-color: #e84343;
+  color: #ffffff;
 }
