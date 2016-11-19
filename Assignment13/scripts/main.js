@@ -48,8 +48,22 @@ function submit() {
     pword.classList.add('errClass')
     Cpword.classList.add('errClass');
 }
-//create errClass in css
-
+  var tZone = getElm("timeZone");
+  if (tZone.value === "empty") {
+    errorMsg.push('Time Zone Not Selected')
+    tZone.classList.add('errClass')
+}
+  var aboutMe = getElm("aboutMe");
+  if (aboutMe.value === "") {
+    errorMsg.push('Come On, Give us a LIL Something Please!')
+    aboutMe.classList.add('errClass')
+}
+  var terms = getElm("terms");
+  console.log(terms.checked);
+  if (terms.checked == false) {
+    errorMsg.push('Terms and Conditions Must Be Accepted')
+    terms.classList.add('errClass')
+}
 
 
 if (errorMsg.length > 0) {
@@ -59,11 +73,9 @@ if (errorMsg.length > 0) {
   }
   getElm("message").innerHTML = html
 }
-/*else {
-  for (var i = 0; i = errorMsg.length; i++) {
-    errorMsg[i].classList.remove('errClass');
-  }
-}*/
+else {
+  alert('Submission Complete')
+};
 
 /*
   var pword = getValue("pword")
@@ -94,7 +106,7 @@ var resetbtn = getElm("btnreset");
 resetbtn.addEventListener('click', reset);
 
 function reset(){
-  var inputIDArray = ["firstName", "lastName", "emailAddress", "pword", "confirmPword",]
+  var inputIDArray = ["firstName", "lastName", "emailAddress", "pword", "confirmPword", "timeZone", "aboutMe", "terms"]
 for(var i = 0; i < inputIDArray.length; i++){
   getElm(inputIDArray[i]).value = "";
   }
