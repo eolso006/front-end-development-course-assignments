@@ -1,3 +1,105 @@
 * {
     box-sizing: border-box;
 }
+body {
+  margin:20px auto;
+  width:960px;
+  font family: Arial, Helvetica, sans-serif;
+  background-color: #a0a0a0;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+}
+a:hover{
+    text-decoration:underline;
+}
+li {
+  list-style: none;
+}
+header {
+  background-color: #ad2222;
+  color: #ffffff;
+/*   padding: 20px; */
+}
+aside {
+  float: left;
+  width: 25%;
+  padding: 2%;
+/*  background-color: #ffffff; */
+}
+.sweeps {
+  background-color: #ffffff;
+}
+form {
+  background-color: #ffffff;
+  margin: auto;
+}
+.errorlist  {
+  clear: both;
+  background-color: #ffffff;
+}
+.red-border{
+    border:1px solid #ff0000;
+}
+.blue-border{
+    border:1px solid #0000aa;
+}
+footer a {
+  color: #000000;
+}
+.errClass {
+  border: 1px solid #e84343;
+  background-color: #e84343;
+  color: #ffffff;
+}
+/* just css
+
+decrease gap between header h1 h2
+
+float all list items
+
+add background color to header nav
+
+float either header nav or search bar
+
+change search field color
+
+re-configure floats
+    and get clear to work
+automargin form including message
+
+change body color to white
+
+center article h1 (reconsider using article tag)
+increase p text size to match height of pic
+
+re-configure floats
+    and get clear to work
+automargin form including message
+
+add padding to each input
+rounded edges for find us
+name place holder / maybe text different for inputs
+
+consider putting labels and inputs in different blocks to align them
+
+float all list items
+add background to footer
+
+add gradient and styling to control panel
+*/
+
+/* interactive javascript css
+
+
+change error list text to red
+unremove bullet list (do i really wanna tho?)
+
+change input field background color if error list
+
+
+ */
+
+/*  */

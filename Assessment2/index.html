@@ -2,16 +2,107 @@
 <html>
 
     <head>
-        <title>Sweepstakes</title>
+        <title>Asses 2</title>
         <link rel="stylesheet" href="styles/main.css">
     </head>
 
     <body>
+<header>
+<h1>Bioplex</h1>
+<h2>Fusce a congue nunc. Proin iaculis accumsan mi, eget sodales orci.</h2>
+<div class="search">
+  <!-- float right add button  -->
+<input type="search" name="search" value="">
+<button type="search">Search</button>
+</div>
+
+<div class="nav">
+  <nav>
+    <!-- add nav bar  float -->
+    <!-- float left  -->
+      <a href="#">HOME</a>
+      <a href="#">RECIPES</a>
+      <a href="#">PRODUCTS</a>
+      <a href="#">FAQ</a>
+      <a href="#">CONTACT</a>
+  </nav>
+</div>
+</header>
+
+<aside class="blender">
+<img src="images/blender.jpg"/>
+</aside>
+
+<content select="main-content">
+<article class="sweeps">
+  <h1>Blender Sweepstakes</h1>
+  <p>
+    You are about to enter to win a brand new Bioplex SuperMax 1900. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+  </p>
+</article>
+
+<section id="message">
+  <ul class="errorlist" id="errorlist">
+
+  </ul>
+ </section>
+
         <form>
+          <div class="firstName">
+            <br><label for="firstName">First Name</label>
+                  <input type="text"  id="firstName"  name="firstName" class="red-border" placeholder="First Name">
+          </div>
+
+          <div class="secondName">
+            <br><label for="lastName">Last Name</label>
+                  <input type="text"  id="lastName"  name="lastName" class="red-border" placeholder="Last Name">
+          </div>
+
+          <div class="emailAddress">
+            <br><label for="emailAddress">Email Address</label>
+                  <input type="email"  id="emailAddress"  name="emailAddress" class="red-border" placeholder="Email Address">
+          </div>
+
+          <div class="select">
+            <br><label for="findUS">How did you find us?</label>
+                  <select id="findus" class="red-border">
+                    <option value="">Please Select</option>
+                    <option value="mouth">Word of mouth</option>
+                    <option value="fb">Facebook</option>
+                </select>
+          </div>
+
+          <div class="textArea">
+            <br><label for="need2blend">Why do you need this blender</label>
+                <textarea name="need2blend" id="need2blend" class="red-border" placeholder="Tell us why you need this"></textarea>
+          </div>
+
+          <div class="terms">
+            <br><div class="terms">
+                <input type="checkbox" name="terms" id="terms" value="">
+                <label for="terms">By checking this box you accept our terms and conditions.</label>
+          </div>
+
+      </br><section class="control-panel">
             <button id="btnSubmit" type="button">Submit</button>
-            <button type="reset">Reset</button>
+            <button type="reset" id="reset">Reset</button>
+          </section>
         </form>
+</content>
+<footer>
+  <!-- float left  -->
+    <a href="#">HOME</a>
+    <a href="#">RECIPES</a>
+    <a href="#">PRODUCTS</a>
+    <a href="#">FAQ</a>
+    <a href="#">CONTACT</a>
+</footer>
+
+
         <script src="scripts/main.js"></script>
     </body>
 
 </html>
+
+
+<!--  -->
