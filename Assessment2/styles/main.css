@@ -1,40 +1,93 @@
 * {
     box-sizing: border-box;
 }
+body, h1, h2, h3, ul{
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+}
 body {
-  margin:20px auto;
-  width:960px;
-  font family: Arial, Helvetica, sans-serif;
-  background-color: #a0a0a0;
+  display: block;
+  font family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: #ccc;
+  width: 960px;
+  margin: auto;
 }
 a {
   text-decoration: none;
   font-weight: bold;
   color: #ffffff;
+  padding: 10px 20px;
+  font-weight: 700;
 }
 a:hover{
-    text-decoration:underline;
+  text-decoration:underline;
 }
 li {
   list-style: none;
 }
 header {
-  background-color: #ad2222;
+  background-color: #a00;
   color: #ffffff;
-/*   padding: 20px; */
+  padding: 20px;
+}
+header h1 {
+  font-size: 33px;
+}
+header h2 {
+  font-style: italic;
+  font-size: 21px;
+}
+.banner {
+  background-color: #a00;
+}
+.search {
+  float: right;
+}
+nav a:hover {
+  background: #700000;
+}
+.navBar {
+  background: maroon;
+  padding: 10px;
+  padding-left: 0;
+}
+.top {
+  background-color: #ffffff;
+  clear: both;
+  padding: 20px;
 }
 aside {
   float: left;
   width: 25%;
-  padding: 2%;
-/*  background-color: #ffffff; */
+/*  padding: 2%;
+  background-color: #ffffff; */
 }
-.sweeps {
+.main-content h1 {
+  text-align: center;
+}
+.main-content p {
+  margin-top: 25px;
+  font-size: 22px;
+}
+.bground {
   background-color: #ffffff;
 }
 form {
   background-color: #ffffff;
-  margin: auto;
+  margin: 0 auto;
+/*  padding-left: 300px;*/
+}
+section {
+  color: #F53F5B;
+/*  width: 60%;*/
+}
+label {
+  float: left;
+}
+section ul {
+/*  width: 100%;
+  margin: auto;*/
 }
 .errorlist  {
   clear: both;
@@ -46,58 +99,61 @@ form {
 .blue-border{
     border:1px solid #0000aa;
 }
+footer {
+  padding: 20px;
+  margin: 20px;
+}
 footer a {
   color: #000000;
+  padding: 20px;
 }
 .errClass {
-  border: 1px solid #e84343;
-  background-color: #e84343;
+  border: 1px solid #F53F5B;
+  background-color: #F53F5B;
   color: #ffffff;
 }
-/* just css
 
-decrease gap between header h1 h2
-
-float all list items
-
-add background color to header nav
-
-float either header nav or search bar
-
-change search field color
-
-re-configure floats
-    and get clear to work
-automargin form including message
-
-change body color to white
-
-center article h1 (reconsider using article tag)
+              /* just css
 increase p text size to match height of pic
 
 re-configure floats
     and get clear to work
 automargin form including message
 
-add padding to each input
-rounded edges for find us
-name place holder / maybe text different for inputs
-
 consider putting labels and inputs in different blocks to align them
 
 float all list items
 add background to footer
 
+add padding to each input
+name place holder / maybe text different for inputs
+
 add gradient and styling to control panel
 */
 
-/* interactive javascript css
+              /* interactive javascript css
 
+change input field background color if error list
+
+decrease gap between header h1 h2
+
+change search field color
+*/
+
+              /* completed tasks
+float all list items
+
+add background color to header nav
+
+float either header nav or search bar
+
+change body color to white
+
+center article h1 (reconsider using article tag)
 
 change error list text to red
 unremove bullet list (do i really wanna tho?)
 
-change input field background color if error list
 
 
  */
