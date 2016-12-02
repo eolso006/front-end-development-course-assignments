@@ -30,6 +30,9 @@ $('#btnCopyValues').on('click', function () {
   $('#paste-text').val(copiedValue)
 })
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> uagc-it-readiness/master
 });
