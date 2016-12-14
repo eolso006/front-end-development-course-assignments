@@ -1,10 +1,10 @@
 $(document).ready(function () {
-    $('input').on('blur', function () {
+    $('input, textarea').on('blur', function () {
         var input = $(this);
         validateRequiredInput(input)
 
         if (input.data('isemail') === true) {
-            validateEmail();
+            validateEmail(input);
         }
 
         if (input.attr('type') === 'password') {
@@ -36,7 +36,7 @@ function validateRequiredInput(input) {
     var val = input.val();
 
     //Find the required input span.
-    var msgSpan = input.find('.requiredMsg');
+    var msgSpan = input.closest('.input-group').find('.requiredMsg');
     if (val === '') {
         msgSpan.fadeIn();
         input.addClass('invalid');
@@ -50,7 +50,7 @@ function validateRequiredInput(input) {
  * Validates an email input
  * Accepts a jQuery object as its input parameter
  * @param {any} email
- */
+*/
 function validateEmail(email) {
     var emailValue = email.val();
 
@@ -58,12 +58,12 @@ function validateEmail(email) {
 
     //Only validate if it is filled out
     if (emailValue !== '') {
-        if (emailValue.indexOf('@') === -1 && emailValue.indexOf('@') === -1) {
-            emailErrorMsg.fadeOut();
-            email.removeClass('invald');
+        if (emailValue.indexOf('@') > -1 && emailValue.indexOf('.com') > -1) {
+          emailErrorMsg.fadeOut();
+          email.removeClass('invalid');
         } else {
-            emailErrorMsg.fadeIn();
-            email.addClass('invald');
+          emailErrorMsg.fadeIn();
+          email.addClass('invalid');
         }
     }
 
@@ -79,7 +79,7 @@ function validatePassword() {
     var passwordConfirmValue = passwordConfirm.val();
 
     //Only validate if both are filled out
-    // if (passwordValue !== '' && passwordConfirmValue !== '') {
+    if (passwordValue !== '' && passwordConfirmValue !== '') {
 
     var passwordErrorMsg = password.closest('.input-group').find('.matchingMsg');
 
@@ -88,14 +88,13 @@ function validatePassword() {
         password.addClass('invalid');
         passwordConfirm.addClass('invalid');
     } else {
-
         passwordErrorMsg.hide();
         password.removeClass('invalid');
         passwordConfirm.removeClass('invalid');
 
     }
 
-    //}
+    }
 }
 
 
@@ -104,16 +103,16 @@ function validateAllInputs() {
     //Select all inputs and text areas
     var allInputs = $('input, textarea');
 
-    //Loop through each and validate individually    
+    //Loop through each and validate individually
     for (var i = 0; i < allInputs.length; i++) {
         var currentInput = allInputs.eq(i);
-        
-        validateInput(currentInput);
 
-        if (input.data('isemail') === true) {
-            validateEmail();
+        validateRequiredInput(currentInput);
+
+        if (currentInput.data('isemail') === true) {
+            validateEmail(currentInput);
         }
-         if (input.attr('type') === 'password') {
+         if (currentInput.attr('type') === 'password') {
             validatePassword();
         }
     }
@@ -123,8 +122,8 @@ function validateAllInputs() {
     if (invalidInputCount > 0) {
         $('#messages').html('Form is Invalid');
     } else {
-        $('.form-element').fadeOut('slow', function () {
-            $('.successmsg').fadeIn();
+        $('.form-elements').fadeOut('slow', function () {
+            $('#successmsg').fadeIn();
         });
     }
 

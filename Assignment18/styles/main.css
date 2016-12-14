@@ -7,13 +7,14 @@ body {
     margin:20px auto;
     font-size:20px;
 }
-.errors{
+/* changed "errors" to correct class error" */
+.error {
     color:#ff0000;
     display:none;
 }
 .invalid{
     border:1px solid #ff0000;
-    background:#ff9191; 
+    background:#ff9191;
 }
 
 .input-group, .check-group{
@@ -35,7 +36,7 @@ body {
     font-size:20px;
 }
 
-.successmsg{
+#successmsg{
     display:none;
 }
 .invalid::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -50,3 +51,5 @@ body {
 .invalid:-moz-placeholder { /* Firefox 18- */
   color: #ff0000;
 }
+
+/* */
