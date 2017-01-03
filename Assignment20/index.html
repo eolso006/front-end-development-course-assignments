@@ -1,12 +1,93 @@
 <!doctype html>
 <html>
 
-    <head>
-        <title>Assignment 18</title>
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
+<head>
+    <title>Assignment 20</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
 
-    <body>
+<body>
+    <div class="container">
+        <header class="navigation">
+            <img src="http://placehold.it/350x100" alt="company logo">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">Q&A</a></li>
+                    <li><a href="https://twitter.com/HalluxInc">twitter</a></li>
+                    <li><a href="https://www.facebook.com/HalluxInc/">facebook</a></li>
+                </ul>
+                <!-- TODO: add twit and FB rounded logos in links -->
+            </nav>
+        </header>
+        <section class="Question">
+            <section class="AskedBy">
+                <h2>Asked By:</h2>
+                <ul>
+                    <li><img src="img/user.png" alt="user icon"></li>
+                    <li>John Doe</li>
+                </ul>
+            </section>
+            <article>
+                <h1>Question Title</h1>
+                <p>Question body. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </article>
+        </section>
+        <aside>
+            <section class="activity-log">
+                <h2>Activity Log</h2>
+                <p>testing</p>
+                <ul>
+
+                </ul>
+            </section>
+        </aside>
+        <section class="Answers">
+            <header>
+                <h2>Answers</h2>
+            </header>
+            <div class="answerBox">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua dunt. Ut enim ad minim veniam, quis nostrud.</p>
+                <ul>
+                    <li><img src="img/user.png" alt="user icon" style="width:64px;height:64px;"></li>
+                    <li>John Doe</li>
+                </ul>
+            </div>
+            <div class="answerBox">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua dunt. Ut enim ad minim veniam, quis nostrud.</p>
+                <ul>
+                    <li><img src="img/user.png" alt="user icon" style="width:64px;height:64px;"></li>
+                    <li>Jane Doe</li>
+                </ul>
+            </div>
+            <div class="answerBox">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua dunt. Ut enim ad minim veniam, quis nostrud.</p>
+                <ul>
+                    <li><img src="img/user.png" alt="user icon" style="width:64px;height:64px;"></li>
+                    <li>Jimmy Doe</li>
+                </ul>
+            </div>
+            <form action="" method="post"></form>
+        </section>
+        <section class="answer-form">
+        <form class="submitAnswer" action="index.html" method="post">
+            <h2>Submit Your Answer</h2>
+            <div class="input-group">
+                <label for="">Your Name</label> <span class="error requiredMsg">Name is Required</span>
+                <input type="text" name="URname" id="answer" value="" class="load">
+            </div>
+            <div class="input-group">
+                <label for="">Your Answer</label> <span class="error requiredMsg">Answer is Required</span>
+                <textarea name="" id="answer" class="load" placeholder="Your Answer"></textarea>
+            </div>
+            <section class="control-panel">
+                <button id="btnSubmit">Submit</button>
+                <button id="btnReset">Reset</button>
+            </section>
+        </form>
+        </section>
         <div class="fl">
             <h2>Append</h2>
             <ul id="append">
@@ -19,6 +100,8 @@
         </div>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="scripts/main.js"></script>
-    </body>
+    </div>
+</body>
 
 </html>
+<!-- -->

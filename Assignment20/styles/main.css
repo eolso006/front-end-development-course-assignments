@@ -2,3 +2,162 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 1000px;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    /* TODO try google fonts Roboto */
+    color: #5a5a5a;
+    margin: 0;
+}
+/* TODO: add margins and spacing to body
+consider rounded edges
+add color to logo banner
+add color to rest of document  */
+nav {
+    width: 100%;
+    border: 1px solid #5a5a5a;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-color: #5a5a5a;
+}
+
+a {
+    text-decoration: none;
+    color: #aa0000;
+}
+
+.Question {
+    background-color: #e7e7e7;
+    border: 1px solid grey;
+    margin-top: 10px;
+    clear: both;
+    padding: 20px;
+    overflow: hidden;
+}
+
+article {
+    width: 70%;
+}
+
+article h1 {
+    color: #620010;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.AskedBy {
+    float: right;
+    margin-right: 10px;
+    width: 30%;
+}
+
+.AskedBy h2 {
+    text-align: center;
+}
+
+.AskedBy li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+/* TODO: having trouble placing my aside within my answers container and still setting where I want it */
+aside {
+    float: right;
+    clear: both;
+    text-align: center;
+    width: 24%;
+}
+
+h2 {
+    color: #620010;
+}
+
+.Answers {
+    width: 75%;
+}
+
+.Answers p {
+    clear: both;
+    text-align: justify;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.Answers ul {
+    margin-right: 30px;
+    text-align: right;
+}
+
+.Answers li {
+    display: inline-block;
+    vertical-align: middle;
+    /*   margin-left: 15px;*/
+}
+
+.answerBox {
+    border: 1px solid #5a5a5a;
+    margin: 20px;
+    padding: 10px;
+    background-color: #e7e7e7;
+    overflow: hidden;
+}
+
+.answer-form {
+    width: 50%;
+    margin: 10px auto;
+    padding-top: 20px;
+    clear: both;
+    font-size: 20px;
+}
+
+.input-group input, .input-group textarea {
+    display: block;
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.control-panel {
+    text-align: center;
+    margin: 20px;
+}
+
+.control-panel button {
+    font-size: 20px;
+    margin-right: 60px;
+}
+
+.load {
+    border:1px solid #ff0000;
+}
+
+.invalid {
+    border:1px solid #ff0000;
+    background:#ff9191;
+    color: #ffffff;
+}
+
+.valid {
+    border: 1px solid blue;
+}
+
+span {
+    color: #620010;
+}
+
+/* Prim Text Color: #5a5a5a (text, borders)
+   Prim Brand Color: #aa0000 (nav, hyperlinks)
+   accent Brand Color: #620010 (heading, titles, stand out)
+*/
+
+
+/* */
