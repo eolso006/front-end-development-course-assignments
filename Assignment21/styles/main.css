@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .main-content{
-    width:960px;
+    max-width:960px;
     margin:20px auto;
 }
 
@@ -16,3 +16,30 @@
     width:50%;
 }
 
+@media screen and (max-width:500px) {
+  body {color: blue;
+}
+}
+
+@media screen and (min-width:400px) and (max-width:800px) {
+  p {
+  background-color: grey;
+  }
+}
+
+@media screen and (min-width:960px) {
+  li {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .main-content {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .fl, .fr {
+    width: 100%;
+    float: none;
+  }
+}
