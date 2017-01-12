@@ -64,7 +64,8 @@ section .section-header {
     border: 1px solid #a00;
     border-left: none;
     border-right: none;
-    text-align: center
+    text-align: center;
+
 }
 
 section .article-list {
@@ -109,4 +110,37 @@ footer>nav {
 footer>nav>a {
     padding: 0 10px;
     display:block;
+}
+
+@media screen and (min-width: 960px) {
+    .main-header nav {
+        text-align: center;
+        border-radius: 25px;
+    }
+    .main-header nav a {
+        display: inline-block;
+    }
+    .hero img {
+        max-width: 620px;
+    }
+    .hero {
+        text-align: center;
+    }
+    .article-list article img {
+        max-width: 350px;
+    }
+    .sponsors>.sponsor-ads>img {
+        max-width: 150px;
+    }
+    section .article-list a, p {
+
+    }
+    section .article-list {
+        float: left;
+        width: 69%;
+    }
+    section>aside {
+        float: right;
+        width: 30%;
+    }
 }

@@ -1,10 +1,8 @@
-body,
-ul {
+body, ul {
     padding: 0
 }
 
-a,
-nav li {
+a, nav li {
     display: inline-block
 }
 
@@ -21,8 +19,7 @@ a {
     text-decoration: none
 }
 
-.image-gallery li:hover h3,
-a:hover {
+.image-gallery li:hover h3, a:hover {
     text-decoration: underline
 }
 
@@ -49,10 +46,8 @@ nav li a {
     padding-right: 20px
 }
 
-footer nav,
-header nav,
-section {
-    width: 960px;
+footer nav, header nav, section {
+    max-width: 960px;
     margin: 0 auto
 }
 
@@ -62,9 +57,33 @@ section {
     width: 25%
 }
 
-
 .image-gallery li:hover img {
     border: 2px solid #333;
     display: block;
     margin: 0 auto
+}
+
+@media screen and (max-width:650px) {
+    .image-gallery li {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .image-gallery li {
+        width: 50%;
+    }
+    a, nav li {
+        display: block;
+    }
+    nav li {
+        border: 1px solid white;
+        padding-left: 10px;
+    }
+    nav ul {
+        padding: 0;
+    }
+    h1 {
+        text-align: center;
+    }
 }
