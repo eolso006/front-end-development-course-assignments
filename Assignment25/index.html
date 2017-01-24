@@ -7,51 +7,49 @@
     <title>Assign 25 nav grid</title>
     <link rel="stylesheet" href="styles/main.css">
     <script src="https://use.fontawesome.com/3e406631b8.js"></script>
+    <!-- TODO: <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <!--
-    add 2 script links
-    jquery
-    and scripts/main.js
-    -->
 </head>
 
 <body>
-<header>
+    <header>
 
-<nav class="row nav-bar">
-  <div class="nav-container">
-    <div class="nav-head cell col xs-100 md-33">
-      <img src="http://placehold.it/200x100">
-<!-- add fontawesome icon and foat right make same size as img, the toggle will control if and how nav is displayed
-      <a class="navbar-brand" href="#">Eric Olson</a> add img source potentially <img src="http://placehold.it/200x100">
-      <button type="button" name="navbar-home" class="toggle"></button> -->
-    </div>
+        <nav class="row nav-bar">
+                <button type="button" name="navbar-home" class="mobile-collapse-toggle cell row xs-25 md-0">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            <div class="logo cell row col xs-75 md-25">
+            <a class="navbar-brand" href=""><h1>My-Graphic</h1></a>
+            </div>
 
-    <div class="cell col xs-100 md-66">
-    <ul class="row">
-      <li class="cell"><a href="#" class="sub-menu-btn">About Me/Bio</a></li>
-      <li class="dropdown cell"><a href="#">Content Links</a>
-        <ul class="sub-menu cell">
-          <li><a href="#">website 1</a></li>
-          <li><a href="#">website 2</a></li>
-        </ul>
-      </li>
-      <li class="dropdown cell"><a href="#" class="sub-menu-btn">Social Media</a>
-        <ul class="sub-menu cell">
-          <li><a href="#">website 1</a></li>
-          <li><a href="#">website 2</a></li>
-          <li><a href="#">website 2</a></li>
-        </ul>
-      </li>
-      <li class="cell col"><a href="#">Contact Me</a></li>
-    </ul>
-  </div>
-  </div>
-</nav>
+                <div class="mobile-collapse cell xs-100 md-75">
+                    <ul class="row mobile-collapse">
+                        <li class="cell col xs-100 md-25 lg-25"><a href="#" class="">About-Me/Bio</a></li>
+                        <li class="drop-down cell col xs-100 md-25 lg-25"><a href="#" class="sub-menu-btn">Content-Links <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            <ul class="sub-menu cell">
+                                <li><a href="#">website 1</a></li>
+                                <li><a href="#">website 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-down cell col xs-100 md-25 lg-25"><a href="#" class="sub-menu-btn">Social-Media <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            <ul class="sub-menu cell">
+                                <li><a href="#">website 1</a></li>
+                                <li><a href="#">website 2</a></li>
+                                <li><a href="#">website 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="cell col xs-100 md-25 lg-25"><a href="#">Contact-Me</a></li>
+                    </ul>
+                </div>
+        </nav>
 
-</header>
+    </header>
 
-  </body>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
 </html>
 
 <!--

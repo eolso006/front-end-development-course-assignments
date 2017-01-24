@@ -144,3 +144,138 @@ footer>nav>a {
         width: 30%;
     }
 }
+
+/*
+build framework structure
+rows = .row
+
+sections:
+1.0 = mobile = .xs
+2.0 = tablet = .md
+3.0 = desktop - .lg
+
+column = .col
+
+mobile = .xs-33
+         .xs-66
+         .xs-50
+
+         .xs-25
+         .xs-75
+         .xs-100
+
+tablet = .md-33
+         .md-66
+         .md-50
+
+         .md-25
+         .md-75
+         .md-100
+
+desktop = .lg-33
+         .lg-66
+         .lg-50
+
+         .lg-25
+         .lg-75
+         .lg-100
+*/
+
+
+/*=====================
+section 1.0 mobile
+=======================*/
+
+@media screen and (max-width:767px) {
+    .row {
+        clear: both;
+        overflow: hidden;
+    }
+    .col {
+        float: left;
+    }
+    .xs-33 {
+        width: 33.333333%;
+    }
+    .xs-66 {
+        width: 66.66666%;
+    }
+    .xs-50 {
+        width: 50%;
+    }
+    .xs-25 {
+        width: 25%;
+    }
+    .xs-75 {
+        width: 75%;
+    }
+    .xs-100 {
+        width: 100%;
+    }
+}
+
+
+/*=====================
+section 2.0 tablet
+=======================*/
+
+@media screen and (min-width:768px) {
+    .row {
+        clear: both;
+        overflow: hidden;
+    }
+    .col {
+        float: left;
+    }
+    .md-33 {
+        width: 33.333333%;
+    }
+    .md-66 {
+        width: 66.66666%;
+    }
+    .md-50 {
+        width: 50%;
+    }
+    .md-25 {
+        width: 25%;
+    }
+    .md-75 {
+        width: 75%;
+    }
+    .md-100 {
+        width: 100%;
+    }
+}
+
+
+/*=====================
+section 3.0 desktop
+=======================*/
+
+@media screen and (min-width:960px) {
+    .row {
+        clear: both;
+        overflow: hidden;
+    }
+    .col {
+        float: left;
+    }
+    .lg-33 {
+        width: 33.333333%;
+    }
+    .lg-66 {
+        width: 66.66666%;
+    }
+    .lg-50 {
+        width: 50%;
+    }
+    .lg-25 {
+        width: 25%;
+    }
+    .lg-75 {
+        width: 75%;
+    }
+    .lg-100 {
+        width: 100%;
+    }
+}
